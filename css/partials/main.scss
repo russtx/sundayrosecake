@@ -1,0 +1,102 @@
+/*==========================================  Main scss ===================================================================== */
+// Home Page
+#collections{
+  .borderBox{
+    border: solid 2px #000;
+    min-height: 200px;
+    h2{
+      text-align: center;
+      font-family: 'Rochester', cursive;
+      color: $rose-pink;
+    }
+    hr{
+      border-top: solid 2px #000;
+      margin: 0 30px;
+    }
+  }
+}
+a.btn-main{
+  display: block;
+  background: #fff;
+  border: solid 1px #000;
+  font-family: 'Rochester', cursive;
+  color: $rose-pink;
+  padding: 6px 18px;
+  margin: 20px auto;
+  text-align: center;
+  width: 180px
+}
+#about{
+  background-image: url('../images/background-rose.png');
+  background-repeat: no-repeat;
+  background-position-x:-50px;
+  background-size: contain;
+  h2{
+    text-align: center;
+    font-family: 'Rochester', cursive;
+    color: $rose-pink;
+  }
+  hr{
+    border-top: solid 2px #000;
+    margin: 0 30px;
+  }
+}
+#instagramFeed{
+  .borderBox{
+    border: solid 2px #000;
+    min-height: 200px;
+    h2{
+      text-align: center;
+      font-family: 'Rochester', cursive;
+      color: $rose-pink;
+    }
+    hr{
+      border-top: solid 2px #000;
+      margin: 0 30px;
+    }
+  }
+
+}
+img.instagram-img{
+  width: 16px;
+  margin: 0 0 2px 16px;
+}
+//filler box for dev only
+img.filler{
+  padding: 10px;
+}
+#qanda{
+  h2{
+    text-align: center;
+    font-family: 'Rochester', cursive;
+    color: $rose-pink;
+  }
+  hr{
+    border-top: solid 2px #000;
+    margin: 0 30px;
+  }
+  .panel-group .panel,.panel-default{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $rose-pink;
+    border-radius: 0px;
+  }
+  .panel-default>.panel-heading{
+    background: transparent;
+    border: none;
+  }
+  h3.panel-title{
+    font-weight: 800;
+  }
+}
+#contact{
+  h2{
+    text-align: center;
+    font-family: 'Rochester', cursive;
+    color: $rose-pink;
+  }
+  hr{
+    border-top: solid 2px #000;
+    margin: 0 30px;
+  }
+}

@@ -1,0 +1,73 @@
+/* responsive settings */
+$screen-xl-min: 1600px;
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Sass Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .navbar-nav {
+      float: none;
+      display: block;
+      margin: 0 auto;
+      width: 565px;
+      clear: both;
+  }
+  .navbar-collapse{
+    position: relative;
+    top:-30px;
+    padding-top: 0;
+  }
+  .social{
+    .socialIcons{
+      display: block;
+      width: 100%;
+      .twitter{
+        float:right;
+      }
+      .facebook{
+        float:right;
+      }
+      .instagram{
+        float:right;
+      }
+    }
+  }
+  .carousel-inner{
+    top:-30px;
+  }
+  .caption-wrapper{
+    top:-300px;
+    .caption{
+      h1{
+        font-size: 70px;
+      }
+    }
+  }
+  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    margin-top: -145px;
+  }
+  #instagramFeed{
+    a.btn-main.left{
+      float: right;
+    }
+    a.btn-main.right{
+      float: left;
+    }
+  }
+}
+/* Medium devices (desktops, 992px and up) =====================================================================================================*/
+@media (min-width: $screen-md-min) {
+
+}
+/* Large devices (large desktops, 1200px and up)============================================================================================ */
+@media (min-width: $screen-lg-min) {
+
+}
+/* Large devices (large desktops, 1600px and up)============================================================================================ */
+@media (min-width: $screen-xl-min) {
+
+}

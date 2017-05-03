@@ -1,0 +1,135 @@
+/*======================= Header ============================================ */
+img.mini-logo-img{
+  display: none;
+}
+.phone-logo{
+  a{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
+    text-align: center;
+  }
+}
+.header-phone{
+  display: block;
+  margin: 0 auto;
+  a{
+    text-align: center
+  }
+}
+.navbar-default{
+  background: transparent;
+  border-color: transparent;
+}
+.navbar-collapse{
+  border-top: transparent;
+  padding-top: 75px
+}
+img.logo-img{
+  display: block;
+  width:100px;
+  margin: 0 auto;
+}
+.social{
+  .socialIcons{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .twitter{
+      background: url("../images/twitter-sprite-clr.png") no-repeat;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      //background-position-y: -30px;
+      //float: right;
+      margin: 10px 10px 0 0;
+    }
+    .twitter:hover{
+      background-position-y: -34px;
+    }
+    .facebook{
+      background: url("../images/facebook-sprite-clr.png") no-repeat;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      //background-position-y: -30px;
+      //float: right;
+      margin: 10px 10px 0 0;
+    }
+    .facebook:hover{
+      background-position-y: -34px;
+    }
+    .instagram{
+      background: url("../images/instagram-sprite-clr.png") no-repeat;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      //background-position-y: -30px;
+      //float: right;
+      margin: 10px 10px 0 0;
+    }
+    .instagram:hover{
+      background-position-y: -34px;
+    }
+  }
+}
+ .navbar-default .navbar-toggle:hover{
+   background: $light-pink;
+ }
+ .navbar-default .navbar-toggle .icon-bar{
+   background: $rose-pink;
+ }
+.navbar-header{
+  margin-top:30px;
+}
+ul#menu-main-menu{
+  li{
+    a{
+      color:#000;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+.navbar{
+  margin-bottom:0px;
+}
+.nav{
+  li{
+    a{
+      padding: 10px 12px;
+    }
+  }
+}
+/*================================= home page =========================================*/
+
+//slider
+.carousel-inner{
+  border-top: solid 5px $rose-pink;
+}
+.caption-wrapper{
+  position: relative;
+  top:-130px;
+  width: 50%;
+  margin: 0 auto;
+
+}
+.caption{
+  h1{
+    font-family: 'Rochester', cursive;
+    text-align: center;
+    font-size: 28px;
+    color:#fff;
+  }
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+  margin-top: -52px;
+}
+.carousel-control.left{
+ background-image: none;
+}
+ .carousel-control.right{
+  background-image: none;
+}

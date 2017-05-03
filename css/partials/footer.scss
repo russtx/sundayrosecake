@@ -1,0 +1,60 @@
+/*================Footer =============*/
+#contact{
+  .footerForm{
+    h4{
+      text-align: center;
+    }
+  }
+  .input-lg{
+    border-radius: 0;
+  }
+
+}
+#connect{
+  h2{
+    text-align: center;
+    font-family: 'Rochester', cursive;
+    color: $rose-pink;
+  }
+  hr{
+    border-top: solid 2px #000;
+    margin: 0 30px;
+  }
+  .footerSocials{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .twitter{
+      background: url("../images/large-twitter-clr.png") no-repeat;
+      display: inline-block;
+      width: 250px;
+      height: 150px;
+      margin: 10px 10px 0 0;
+    }
+    .twitter:hover{
+      background-position-y: -150px;
+    }
+    .facebook{
+      background: url("../images/large-facebook-clr.png") no-repeat;
+      display: inline-block;
+      width: 250px;
+      height:150px;
+      margin: 10px 10px 0 0;
+    }
+    .facebook:hover{
+      background-position-y: -150px;
+    }
+    .instagram{
+      background: url("../images/large-instagram-clr.png") no-repeat;
+      display: inline-block;
+      width: 250px;
+      height: 150px;
+      margin: 10px 10px 0 0;
+    }
+    .instagram:hover{
+      background-position-y: -150px;
+    }
+  }
+
+}
