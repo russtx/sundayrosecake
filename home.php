@@ -15,29 +15,33 @@
 		</section>
 		<section id="about">
 			<div class="container">
-				<h2><?php
-    // query for the about page
-    $your_query = new WP_Query( 'pagename=about' );
-    // "loop" through query (even though it's just one page)
-    while ( $your_query->have_posts() ) : $your_query->the_post();
-        the_title();
-    endwhile;
-    // reset post data (important!)
-    wp_reset_postdata();
-?></h2>
-				<hr />
-				<?php
-				    // query for the about page
-				    $your_query = new WP_Query( 'pagename=about' );
-				    // "loop" through query (even though it's just one page)
-				    while ( $your_query->have_posts() ) : $your_query->the_post();
-				        the_content();
-				    endwhile;
-				    // reset post data (important!)
-				    wp_reset_postdata();
-				?>
-				<a href="#" class="btn-main">Learn More</a>
-			</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 ">
+						<h2><?php
+						    // query for the about page
+						    $your_query = new WP_Query( 'pagename=about' );
+						    // "loop" through query (even though it's just one page)
+						    while ( $your_query->have_posts() ) : $your_query->the_post();
+						        the_title();
+						    endwhile;
+						    // reset post data (important!)
+						    wp_reset_postdata();
+						?></h2>
+										<hr />
+						<?php
+						    // query for the about page
+						    $your_query = new WP_Query( 'pagename=about' );
+						    // "loop" through query (even though it's just one page)
+						    while ( $your_query->have_posts() ) : $your_query->the_post();
+						        the_content();
+						    endwhile;
+						    // reset post data (important!)
+						    wp_reset_postdata();
+						?>
+						<a href="#" class="btn-main">Learn More</a>
+					</div>
+				</div><!-- row -->
+			</div><!-- container -->
 		</section>
 		<section id="instagramFeed">
 			<div class="container">
@@ -165,7 +169,7 @@
 				</div><!-- panel-group -->
 			</div><!-- container -->
 		</section>
-		
+
 
 
 <?php get_footer(); ?>

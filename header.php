@@ -20,7 +20,7 @@
             <a href="tel:555.555.5555" class="header-phone">555.555.5555</a>
           </div>
 
-          <div class="col-xs-12 col-sm-4 main-logo">
+          <div class="col-xs-12 col-sm-4 main-logo top-header">
               <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" class="logo-img"></a>
           </div>
 
@@ -34,20 +34,32 @@
         </div><!-- container -->
       </div><!-- masthead -->
 
-      <nav class="navbar navbar-default" role="navigation">
+      <nav class="navbar navbar-default " data-spy="affix" data-offset-top="197" role="navigation" >
         <!-- Brand and toggle get grouped for better mobile display -->
           <div class="container">
             <div class="navbar-header">
+
+              <div class="col-xs-12 col-sm-4 phone-logo">
+                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-mini.png" alt="Mini Logo" class="mini-logo-img"></a>
+                <a href="tel:555.555.5555" class="header-phone">555.555.5555</a>
+              </div>
+
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
 
-            </div>
+              <div class=" socialIcons">
+                <a href="#" class="twitter"></a>
+                <a href="#" class="facebook"></a>
+                <a href="#" class="instagram"></a>
+              </div>
+
+            </div><!-- navbar-header -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse " >
              <?php wp_nav_menu( array('menu' => 'Main', 'menu_class' => 'nav navbar-nav ', 'depth'=> 3, 'container'=> false, 'walker'=> new Bootstrap_Walker_Nav_Menu)); ?>
             </div><!-- /.navbar-collapse -->
           </div><!-- container -->

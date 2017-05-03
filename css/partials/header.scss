@@ -3,6 +3,7 @@ img.mini-logo-img{
   display: none;
 }
 .phone-logo{
+
   a{
     color: #000;
     text-decoration: none;
@@ -19,8 +20,10 @@ img.mini-logo-img{
   }
 }
 .navbar-default{
-  background: transparent;
+  height:100px;
+  background:$offwhite;
   border-color: transparent;
+  border-bottom: 10px solid $rose-pink;
 }
 .navbar-collapse{
   border-top: transparent;
@@ -44,7 +47,7 @@ img.logo-img{
       height: 30px;
       //background-position-y: -30px;
       //float: right;
-      margin: 10px 10px 0 0;
+      margin: 10px 5px 0 0;
     }
     .twitter:hover{
       background-position-y: -34px;
@@ -56,7 +59,7 @@ img.logo-img{
       height: 30px;
       //background-position-y: -30px;
       //float: right;
-      margin: 10px 10px 0 0;
+      margin: 10px 5px 0 0;
     }
     .facebook:hover{
       background-position-y: -34px;
@@ -68,7 +71,7 @@ img.logo-img{
       height: 30px;
       //background-position-y: -30px;
       //float: right;
-      margin: 10px 10px 0 0;
+      margin: 10px 5px 0 0;
     }
     .instagram:hover{
       background-position-y: -34px;
@@ -82,9 +85,13 @@ img.logo-img{
    background: $rose-pink;
  }
 .navbar-header{
+  //display: block;
   margin-top:30px;
+  //border-bottom: solid 5px $rose-pink;
+  //width: 100%;
 }
 ul#menu-main-menu{
+
   li{
     a{
       color:#000;
@@ -103,11 +110,25 @@ ul#menu-main-menu{
     }
   }
 }
+// sticky header
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+
+  }
+  .affix.phone-logo{
+    visibility: visible;
+  }
 /*================================= home page =========================================*/
 
 //slider
 .carousel-inner{
-  border-top: solid 5px $rose-pink;
+
 }
 .caption-wrapper{
   position: relative;

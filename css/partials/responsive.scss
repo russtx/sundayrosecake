@@ -9,17 +9,100 @@ $screen-sm-min: 768px;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
+
+  .phone-logo{
+    a{
+
+      float: left;
+    }
+  }
   .navbar-nav {
       float: none;
       display: block;
       margin: 0 auto;
-      width: 565px;
+      width: 450px;
       clear: both;
+  }
+  ul#menu-main-menu{
+    li{
+      a{
+        font-size: 14px;
+      }
+    }
+  }
+  .navbar-default{
+    height:52px;
   }
   .navbar-collapse{
     position: relative;
     top:-30px;
     padding-top: 0;
+  }
+  .navbar-header{
+    width:100%;
+    margin-top: 0;
+    img.mini-logo-img{
+      display: block;
+      float: left;
+      width: 25px;
+      margin-left: -15px;
+    }
+    .phone-logo{
+      visibility: hidden;
+      margin-top: 20px;
+      a{
+         font-size: 14px;
+         float:left;
+         font-weight: 600;
+      }
+      a.header-phone{
+        padding-left: 5px;
+      }
+    }
+    .socialIcons{
+      visibility: hidden;
+      width: 15%;
+      margin: 0 ;
+      display: flex;
+      justify-content: space-between;
+      float:right;
+      .twitter{
+        background: url("../images/twitter-sprite-clr.png") no-repeat;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        //background-position-y: -30px;
+        //float: right;
+        margin: 10px 5px 0 0;
+      }
+      .twitter:hover{
+        background-position-y: -34px;
+      }
+      .facebook{
+        background: url("../images/facebook-sprite-clr.png") no-repeat;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        //background-position-y: -30px;
+        //float: right;
+        margin: 10px 5px 0 0;
+      }
+      .facebook:hover{
+        background-position-y: -34px;
+      }
+      .instagram{
+        background: url("../images/instagram-sprite-clr.png") no-repeat;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        //background-position-y: -30px;
+        //float: right;
+        margin: 10px 5px 0 0;
+      }
+      .instagram:hover{
+        background-position-y: -34px;
+      }
+    }
   }
   .social{
     .socialIcons{
@@ -37,7 +120,7 @@ $screen-sm-min: 768px;
     }
   }
   .carousel-inner{
-    top:-30px;
+    top:0px;
   }
   .caption-wrapper{
     top:-300px;
@@ -58,14 +141,177 @@ $screen-sm-min: 768px;
       float: left;
     }
   }
+  #contact{
+    .borderBox{
+      min-height: 800px;
+    }
+  }
+  img.footer-logo-img{
+    margin:0;
+    width: 80px;
+  }
+  .contact-nav p {
+    text-align: right;
+    margin-top: 25px;
+    font-weight: 700;
+    padding-right: 20px;
+  }
+  .footer-nav{
+    ul{
+      column-count: unset;
+      display: flex;
+      justify-content: space-around;
+    }
+    .navbar-nav{
+      width: 100%;
+    }
+  }
+
 }
 /* Medium devices (desktops, 992px and up) =====================================================================================================*/
 @media (min-width: $screen-md-min) {
+  .navbar-header{
 
+    img.mini-logo-img{
+      width: 40px;
+    }
+    .phone-logo{
+      //visibility: visible;
+      margin-top: 6px;
+      a{
+        font-size: 18px;
+
+      }
+      a.header-phone{
+        margin-top: 5px;
+      }
+    }
+    .socialIcons{
+      //visibility: visible;
+    }
+  }
+  .navbar-nav{
+    width: 540px;
+  }
+  ul#menu-main-menu{
+    li{
+      a{
+        font-size: 18px
+      }
+    }
+  }
+  .navbar-collapse{
+    top:-38px;
+  }
+  .caption-wrapper {
+    top: -382px;
+    .caption{
+      h1{
+        font-size: 90px;
+      }
+    }
+  }
+  #collections{
+    .borderBox{
+      h2{
+        font-size: 48px;
+      }
+    }
+  }
+  a.btn-main{
+    font-size: 22px;
+    text-decoration: none;
+  }
+  #about{
+    h2{
+      font-size: 48px;
+      margin: 50px 0 20px;
+    }
+    p{
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+    a.btn-main{
+      margin-bottom: 80px;
+    }
+  }
+  #instagramFeed{
+    .borderBox{
+      h2{
+        font-size: 48px;
+        margin: 30px 0;
+      }
+    }
+  }
+  #qanda{
+    h2{
+      font-size: 48px;
+      margin: 30px 0;
+    }
+    h3.panel-title{
+      font-size: 22px;
+      font-weight: 700;
+      a{
+        text-decoration: none;
+      }
+    }
+    .panel-body{
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 50px;
+    }
+  }
+  #contact{
+    .borderBox{
+      min-height: 850px;
+    }
+    h2{
+      font-size: 48px;
+      margin: 30px 0;
+    }
+  }
+  #connect{
+    h2{
+      font-size: 48px;
+      margin: 30px 0;
+    }
+    .footerSocials{
+      width: 60%;
+    }
+  }
+  img.footer-logo-img {
+    margin: 0;
+    width: 100px;
+  }
+  .contact-nav{
+    p{
+      font-size: 18px
+    }
+  }
+  .footer-nav{
+    ul{
+      li{
+        a{
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 @media (min-width: $screen-lg-min) {
-
+  .caption-wrapper {
+    top: -460px;
+    .caption{
+      h1{
+        font-size: 112px;
+      }
+    }
+  }
+  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    width: 100vw;
+  }
 }
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
 @media (min-width: $screen-xl-min) {

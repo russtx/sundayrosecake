@@ -1,13 +1,26 @@
 /*================Footer =============*/
 #contact{
+  .borderBox{
+    border: solid 2px #000;
+  }
   .footerForm{
     h4{
       text-align: center;
     }
+    input[type=submit] {
+      width:100%;
+      background: #fff;
+      font-family: 'Rochester', cursive;
+      color: $rose-pink;
+      border: solid 1px #000;
+      font-size: 22px;
+    }
+    .input-lg{
+      border-radius: 0;
+      border: solid 1px #000;
+    }
   }
-  .input-lg{
-    border-radius: 0;
-  }
+
 
 }
 #connect{
@@ -55,6 +68,84 @@
     .instagram:hover{
       background-position-y: -150px;
     }
+  }
+  .small-footer-socialIcons{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .twitter{
+      background: url("../images/twitter-sprite-clr.png") no-repeat;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      //background-position-y: -30px;
+      //float: right;
+      margin: 10px 10px 0 0;
+    }
+    .twitter:hover{
+      background-position-y: -34px;
+    }
+    .facebook{
+      background: url("../images/facebook-sprite-clr.png") no-repeat;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      //background-position-y: -30px;
+      //float: right;
+      margin: 10px 10px 0 0;
+    }
+    .facebook:hover{
+      background-position-y: -34px;
+    }
+    .instagram{
+      background: url("../images/instagram-sprite-clr.png") no-repeat;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      //background-position-y: -30px;
+      //float: right;
+      margin: 10px 10px 0 0;
+    }
+    .instagram:hover{
+      background-position-y: -34px;
+    }
+  }
+}
+//bottom of footer
+
+footer{
+  border-top: solid 10px $rose-pink;
+
+}
+img.footer-logo-img{
+  display: block;
+  padding: 25px 10px;
+  margin:0 auto;
+}
+.contact-nav{
+  p{
+    text-align: center;
+    text-transform: uppercase;
+    a{
+      color: #000;
+    }
+  }
+}
+.footer-nav{
+  ul{
+    border-top: solid 2px $rose-pink;
+    margin: 0 20px 26px;
+    column-count: 2;
+    li{
+      text-align: center;
+      text-transform: uppercase;
+      a{
+        color: #000;
+        font-weight: 600;
+      }
+    }
+
   }
 
 }
