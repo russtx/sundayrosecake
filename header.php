@@ -65,46 +65,67 @@
           </div><!-- container -->
       </nav>
 </header>
-<section id="hp-hero" class="carousel slide" data-ride="">
-  <div class="carousel-inner" role="listbox">
+<?php if(is_front_page()): ?>
+    <section id="hp-hero" class="carousel slide" data-ride="">
+      <div class="carousel-inner" role="listbox">
 
-    <div class="item active">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/roses-coral-gradient.jpg" alt="Roses with Coral Gradient" />
-      <div class="caption-wrapper">
-        <div class="caption">
-          <h1>Sweet Elegance of Cake Artistry</h1>
+        <div class="item active">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/roses-coral-gradient.jpg" alt="Roses with Coral Gradient" />
+          <div class="caption-wrapper">
+            <div class="caption">
+              <h1>Sweet Elegance of Cake Artistry</h1>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="item">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/roses-coral-gradient.jpg" alt="Roses with Coral Gradient" />
-      <div class="caption-wrapper">
-        <div class="caption">
-          <h1>Second Slide</h1>
+        <div class="item">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/roses-coral-gradient.jpg" alt="Roses with Coral Gradient" />
+          <div class="caption-wrapper">
+            <div class="caption">
+              <h1>Second Slide</h1>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="item">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/roses-coral-gradient.jpg" alt="Roses with Coral Gradient" />
-      <div class="caption-wrapper">
-        <div class="caption">
-          <h1>Third Slide</h1>
+        <div class="item">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/roses-coral-gradient.jpg" alt="Roses with Coral Gradient" />
+          <div class="caption-wrapper">
+            <div class="caption">
+              <h1>Third Slide</h1>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-  </div><!-- carousel-inner -->
+      </div><!-- carousel-inner -->
 
-      <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+          <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
 
-</section><!-- hp-hero -->
+    </section><!-- hp-hero -->
+
+        <?php else: ?>
+
+          
+
+        <section id="heroSection">
+        <div id="mainPhoto" style="background-image: url(<?php the_field('hero_image'); ?>);">
+
+        <?php if(get_field('hero_title')): ?>
+
+          <h1><?php the_field('hero_title'); ?></h1>
+
+        <?php else: ?>
+
+          <h1><?php echo get_the_title(); ?></h1>
+
+        <?php endif; ?>
+
+      <?php endif; ?>
+      </section><!-- heroSection -->

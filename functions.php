@@ -372,7 +372,10 @@ add_action( 'wp_enqueue_scripts', 'bootstrap_theme_enqueue_scripts', 1 );
 
 function pu_display_section($section){}
 
-	
+	function new_excerpt_more( $more ) {
+		return '';
+	}
+	add_filter('excerpt_more', 'new_excerpt_more');
 
 // AFC functions
 

@@ -9,7 +9,31 @@ $screen-sm-min: 768px;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
+  // sticky header
+  .affix {
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
 
+    .affix + .container-fluid {
+        padding-top: 70px;
+
+    }
+
+  .affix{
+    .navbar-header {
+      .phone-logo{
+        visibility: visible;
+      }
+      .socialIcons{
+          visibility: visible;
+      }
+    }
+  }
+  .navbar-default.affix{
+    margin-top: 0;
+  }
   .phone-logo{
     a{
 
@@ -24,6 +48,7 @@ $screen-sm-min: 768px;
       clear: both;
   }
   ul#menu-main-menu{
+    background: transparent;
     li{
       a{
         font-size: 14px;
@@ -104,6 +129,7 @@ $screen-sm-min: 768px;
       }
     }
   }
+
   .social{
     .socialIcons{
       display: block;
@@ -166,6 +192,83 @@ $screen-sm-min: 768px;
       width: 100%;
     }
   }
+  /*============== Hero image ===============*/
+  #mainPhoto{
+    min-height: 384px;
+    h1{
+      font-size: 100px;
+      padding: 70px 130px;
+    }
+  }
+  /*==================== About Content ==========*/
+  .contentArea{
+    p{
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  /*==================== Collections Content ==========*/
+  .collectionsContent{
+    background-position: 16px;
+    background-size:contain;
+    padding: 20px 60px;
+    margin-bottom: 10px;
+  }
+  #collectionLinks{
+    min-height: 300px;
+    .leftSide{
+      border-right: 2px solid #000;
+      padding: 20px;
+      margin:20px 0 30px 0;
+
+      a.btn-main{
+        position: absolute;
+        top: 170px;
+        right: 94px;
+      }
+    }
+    .rightSide{
+      padding: 20px;
+      margin:20px 0 30px 0;
+
+      a.btn-main{
+        position: absolute;
+        top: 170px;
+        left: 94px;
+      }
+    }
+  }
+    /*==================== Blog Content ==========*/
+  #postSection{
+    .postContent{
+      img{
+        width: 220px;
+      }
+    }
+  }
+  /*==================== Post Content ==========*/
+  #singlePost{
+    a.btn-main{
+      margin: 20px 0 0 0;
+    }
+  }
+
+  #divider{
+    margin: 20px 20px 60px 20px;
+  }
+  #otherPost{
+    background-image: url(../images/background-rose.png);
+    background-repeat: no-repeat;
+    background-position-x: -320px;
+    background-size: contain;
+    padding-bottom: 30px;
+    .otherPostContent{
+      img{
+        width: 220px;
+      }
+    }
+  }
+    /*==================== contact page ==========*/
 
 }
 /* Medium devices (desktops, 992px and up) =====================================================================================================*/
@@ -298,6 +401,112 @@ $screen-sm-min: 768px;
       }
     }
   }
+  /*============== Hero image ===============*/
+  #mainPhoto{
+    min-height: 500px;
+    h1{
+      font-size: 130px;
+      padding: 100px 170px;
+    }
+  }
+  /*==================== About Content ==========*/
+  .contentArea{
+    p{
+      font-size: 20px;
+
+    }
+  }
+    /*==================== Collections Content ==========*/
+    .collectionsContent{
+      h2{
+        font-size: 48px;
+        margin-top: 30px;
+      }
+      p{
+        font-size: 20px;
+        line-height: 34px;
+      }
+    }
+    #collectionLinks{
+      min-height: 400px;
+        .leftSide{
+          p{
+            font-size: 20px;
+            line-height: 34px;
+          }
+          a.btn-main{
+            width: 220px;
+            top:250px;
+            right: 125px;
+          }
+      }
+      .rightSide{
+        p{
+          font-size: 20px;
+          line-height: 34px;
+        }
+        a.btn-main{
+          width: 220px;
+          top:250px;
+          left: 125px;
+        }
+      }
+    }
+    /*==================== Blog Content ==========*/
+  #postSection{
+    .postContent{
+      img{
+        width: 290px;
+      }
+    }
+  }
+    /*==================== Post Content ==========*/
+  #singlePost{
+    .latestPostContent{
+      h2{
+        font-weight: 700;
+      }
+      h3{
+        padding-bottom: 10px;
+      }
+      p{
+        font-size: 20px;
+        line-height: 26px;
+      }
+      img{
+        width: 290px;
+      }
+    }
+  }
+  #otherPost{
+    .otherPostContent{
+      h2{
+        font-weight: 700;
+      }
+      h3{
+        padding-bottom: 10px;
+      }
+      p{
+        font-size: 20px;
+        line-height: 26px;
+      }
+      img{
+        width: 290px;
+      }
+    }
+  }
+    /*==================== Contact Page ==========*/
+    #contactSection{
+      h2{
+        font-size: 48px;
+      }
+      span {
+        a{
+          font-size: 18px;
+          margin-bottom: 40px;
+        }
+      }
+    }
 }
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 @media (min-width: $screen-lg-min) {
@@ -312,6 +521,64 @@ $screen-sm-min: 768px;
   .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
     width: 100vw;
   }
+  /*==================== Collections Content ==========*/
+  .collectionsContent{
+    h2{
+      font-size: 48px;
+      margin-top: 30px;
+    }
+    p{
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+  }
+  #collectionLinks{
+    min-height: 440px;
+      .leftSide{
+        p{
+          font-size: 28px;
+          line-height: 40px;
+        }
+        a.btn-main{
+          width: 220px;
+          top:300px;
+          right: 175px;
+        }
+    }
+    .rightSide{
+      p{
+        font-size: 28px;
+        line-height: 40px;
+      }
+      a.btn-main{
+        width: 220px;
+        top:300px;
+        left: 175px;
+      }
+    }
+  }
+  /*==================== Blog Content ==========*/
+  #postSection{
+    .postContent{
+      img{
+        width: 350px;
+      }
+      h3{
+        font-size: 28px;
+      }
+      span p{
+        font-size: 16px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+    .wp-pagenavi{
+      padding: 20px 0 60px 0;
+    }
+  }
+
 }
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
 @media (min-width: $screen-xl-min) {

@@ -19,11 +19,15 @@ img.mini-logo-img{
     text-align: center
   }
 }
+.navbar-default.affix{
+  margin-top:-172px;
+}
 .navbar-default{
   height:100px;
   background:$offwhite;
   border-color: transparent;
   border-bottom: 10px solid $rose-pink;
+  z-index: 9999;
 }
 .navbar-collapse{
   border-top: transparent;
@@ -45,8 +49,6 @@ img.logo-img{
       display: inline-block;
       width: 30px;
       height: 30px;
-      //background-position-y: -30px;
-      //float: right;
       margin: 10px 5px 0 0;
     }
     .twitter:hover{
@@ -57,8 +59,6 @@ img.logo-img{
       display: inline-block;
       width: 30px;
       height: 30px;
-      //background-position-y: -30px;
-      //float: right;
       margin: 10px 5px 0 0;
     }
     .facebook:hover{
@@ -69,8 +69,6 @@ img.logo-img{
       display: inline-block;
       width: 30px;
       height: 30px;
-      //background-position-y: -30px;
-      //float: right;
       margin: 10px 5px 0 0;
     }
     .instagram:hover{
@@ -78,20 +76,26 @@ img.logo-img{
     }
   }
 }
+.navbar-toggle{
+  margin-top:-26px;
+}
  .navbar-default .navbar-toggle:hover{
    background: $light-pink;
  }
  .navbar-default .navbar-toggle .icon-bar{
    background: $rose-pink;
+
  }
 .navbar-header{
-  //display: block;
   margin-top:30px;
-  //border-bottom: solid 5px $rose-pink;
-  //width: 100%;
+  .phone-logo{
+    visibility: hidden;
+  }
 }
 ul#menu-main-menu{
-
+  background: #fff;
+  z-index: 9999;
+  margin-top:-70px;
   li{
     a{
       color:#000;
@@ -101,7 +105,9 @@ ul#menu-main-menu{
   }
 }
 .navbar{
+  width: 100%;
   margin-bottom:0px;
+  //margin-top: -172px;
 }
 .nav{
   li{
@@ -110,20 +116,10 @@ ul#menu-main-menu{
     }
   }
 }
-// sticky header
-.affix {
-      top: 0;
-      width: 100%;
-      z-index: 9999;
-  }
-
-  .affix + .container-fluid {
-      padding-top: 70px;
-
-  }
-  .affix.phone-logo{
-    visibility: visible;
-  }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  background: transparent !important;
+  color: $rose-pink !important;
+}
 /*================================= home page =========================================*/
 
 //slider
@@ -153,4 +149,19 @@ ul#menu-main-menu{
 }
  .carousel-control.right{
   background-image: none;
+}
+/*================================= Hero image =========================================*/
+
+#mainPhoto{
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  margin-top: -20px;
+  h1{
+    color: #fff;
+    font-family: 'Rochester', cursive;
+    text-align: center;
+    padding-top:70px;
+  }
 }

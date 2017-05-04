@@ -106,3 +106,172 @@ img.filler{
     margin: 0 30px;
   }
 }
+/*======================================= About Page =====================================================*/
+.contentArea{
+  padding: 20px 40px;
+  font-family:'Avenir Next W01';
+
+}
+/*======================================= Collections Page =====================================================*/
+.collectionsContent{
+  padding: 40px;
+  text-align: right;
+  background-repeat: no-repeat;
+  background-position: -100vw;
+  h2{
+    font-family: 'Rochester', cursive;
+    color: $rose-pink;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+  }
+}
+#cakeGallery{
+  margin-bottom: 20px;
+  .borderBox{
+    border: solid 2px #000;
+    min-height: 200px;
+    h2{
+      text-align: center;
+      font-family: 'Rochester', cursive;
+      color: $rose-pink;
+    }
+    h4{
+      text-align: center;
+    }
+    hr{
+      border-top: solid 2px #000;
+      margin: 0 30px;
+    }
+  }
+}
+#collectionLinks{
+  .leftSide{
+    text-align: center;
+  }
+  .rightSide{
+    text-align: center;
+  }
+}
+/*======================================= Blog Page =====================================================*/
+#postSection{
+  .postContent{
+    padding: 20px;
+    h3{
+      color: $rose-pink;
+      font-weight: 700;
+    }
+    span p{
+      text-transform: uppercase;
+      border-bottom: solid 2px #000;
+    }
+    img{
+      display: block;
+      width: 290px;
+      height: auto;
+      margin: 0 auto;
+
+    }
+  }
+  .wp-pagenavi{
+    width:150px;
+    margin: 0 auto;
+    padding: 20px 0;
+    span{
+      color: $rose-pink;
+    }
+    a{
+      color: $rose-pink;
+    }
+    img{
+      display: block;
+      width: 290px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}
+/*=======================================Post Page =====================================================*/
+#singlePost{
+  a.btn-main{
+    width:100px;
+    font-size: 18px;
+  }
+  .latestPostContent{
+    padding: 20px;
+
+
+    h2{
+      color: $rose-pink;
+    }
+    h3{
+      text-transform: uppercase;
+      border-bottom: 2px solid #000;
+    }
+    img{
+      display: block;
+      width: 290px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}
+#divider{
+  border-bottom: 2px solid #000;
+  margin: 20px;
+}
+#otherPost{
+  .otherPostContent{
+    padding: 20px;
+    h2{
+      color: $rose-pink;
+    }
+    h3{
+      text-transform: uppercase;
+      border-bottom: 2px solid #000;
+    }
+    img{
+      display: block;
+      width: 290px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}
+/*=======================================Contact Page =====================================================*/
+.page-template-contact{
+  #contact{
+    display: none;
+  }
+}
+#contactSection{
+  h2{
+    text-align: center;
+    font-family: 'Rochester', cursive;
+    color: #ff7174;
+  }
+  hr{
+    border-top: solid 2px #000;
+    margin: 0 30px;
+  }
+  span{
+    a{
+      color: #000;
+      text-decoration: none;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  input[type=submit] {
+    width:100%;
+    background: #fff;
+    font-family: 'Rochester', cursive;
+    color: $rose-pink;
+    border: solid 1px #000;
+    font-size: 22px;
+  }
+  .input-lg{
+    border-radius: 0;
+    border: solid 1px #000;
+  }
+}
