@@ -26,9 +26,9 @@
 
           <div class="col-xs-12 col-sm-4 social">
             <div class=" socialIcons">
-              <a href="#" class="instagram"></a>
-              <a href="#" class="facebook"></a>
-              <a href="#" class="twitter"></a>
+              <a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="instagram"></a>
+              <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="facebook"></a>
+              <a href="<?php the_field('twitter', 'option'); ?>" target="_blank" class="twitter"></a>
             </div>
           </div>
         </div><!-- container -->
@@ -51,9 +51,9 @@
               </button>
 
               <div class=" socialIcons">
-                <a href="#" class="twitter"></a>
-                <a href="#" class="facebook"></a>
-                <a href="#" class="instagram"></a>
+                <a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="instagram"></a>
+                <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="facebook"></a>
+                <a href="<?php the_field('twitter', 'option'); ?>" target="_blank" class="twitter"></a>
               </div>
 
             </div><!-- navbar-header -->
@@ -112,7 +112,7 @@
 
         <?php else: ?>
 
-          
+
 
         <section id="heroSection">
         <div id="mainPhoto" style="background-image: url(<?php the_field('hero_image'); ?>);">

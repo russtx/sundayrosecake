@@ -156,8 +156,12 @@ $screen-sm-min: 768px;
       }
     }
   }
+  .carousel {
+    height: 100%;
+    max-height: 486px;
+  }
   .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
-    margin-top: -145px;
+    margin-top: -21px;
   }
   #instagramFeed{
     a.btn-main.left{
@@ -200,6 +204,10 @@ $screen-sm-min: 768px;
       padding: 70px 130px;
     }
   }
+  /*============== Home Page ===============*/
+
+
+
   /*==================== About Content ==========*/
   .contentArea{
     p{
@@ -285,8 +293,12 @@ $screen-sm-min: 768px;
       padding-bottom: 30px;
 
     }
-
-
+    /*==================== Collections Section ==========*/
+    #cakeGallery{
+      .borderBox{
+        padding: 20px;
+      }
+    }
 }
 /* Medium devices (desktops, 992px and up) =====================================================================================================*/
 @media (min-width: $screen-md-min) {
@@ -330,6 +342,9 @@ $screen-sm-min: 768px;
         font-size: 90px;
       }
     }
+  }
+  .carousel{
+    max-height: 588px;
   }
   #collections{
     .borderBox{
@@ -538,7 +553,12 @@ $screen-sm-min: 768px;
         font-size: 48px;
       }
     }
-
+    /*==================== Collections Section ==========*/
+    #cakeGallery{
+      .borderBox{
+        padding: 20px 100px;
+      }
+    }
 
 }
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
@@ -567,6 +587,9 @@ $screen-sm-min: 768px;
       line-height: 40px;
     }
 
+  }
+  .carousel{
+    max-height: 790px;
   }
   #collectionLinks{
     min-height: 440px;
@@ -618,8 +641,16 @@ $screen-sm-min: 768px;
     background-position-x: -45px;
     background-position-y: 170px;
   }
+  /*==================== Collections Section ==========*/
+  #cakeGallery{
+    .borderBox{
+      padding: 20px 200px;
+    }
+  }
 }
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
 @media (min-width: $screen-xl-min) {
-
+  .carousel {
+    max-height: 935px;
+  }
 }

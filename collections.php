@@ -100,11 +100,11 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 leftSide">
 					<?php the_field('collections_left_side'); ?>
-					<a href="#" class="btn-main">Contact Us Today</a>
+					<a href="<?php echo home_url(); ?>/contact/" class="btn-main">Contact Us Today</a>
 				</div>
 				<div class="col-xs-12 col-sm-6 rightSide">
 					<?php the_field('collections_right_side'); ?>
-					<a href="#" class="btn-main">View our Menu Now</a>
+					<a href="<?php echo home_url(); ?>/menu/" class="btn-main">View our Menu Now</a>
 				</div>
 			</div><!-- row -->
 		</div><!-- container -->

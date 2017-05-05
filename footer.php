@@ -16,15 +16,15 @@
       </div>
       <div class="row">
         <div class="footerSocials hidden-xs ">
-          <a href="#" class="twitter"></a>
-          <a href="#" class="facebook"></a>
-          <a href="#" class="instagram"></a>
+          <a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="instagram"></a>
+          <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="facebook"></a>
+          <a href="<?php the_field('twitter', 'option'); ?>" target="_blank" class="twitter"></a>
         </div>
 
         <div class=" small-footer-socialIcons visible-xs-* hidden-sm hidden-md hidden-lg">
-          <a href="#" class="instagram"></a>
-          <a href="#" class="facebook"></a>
-          <a href="#" class="twitter"></a>
+          <a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="instagram"></a>
+          <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="facebook"></a>
+          <a href="<?php the_field('twitter', 'option'); ?>" target="_blank" class="twitter"></a>
         </div>
 
       </row>

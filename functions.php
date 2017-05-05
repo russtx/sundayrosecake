@@ -397,4 +397,34 @@ if(function_exists('acf_add_options_page')){
 
   ));
 
+	acf_add_options_sub_page(array(
+
+		'page_title' 	=> 'Social Links',
+
+		'menu_title'	=> 'Social Links',
+
+    'parent_slug'	=> 'general-settings',
+
+	));
+
+	acf_add_options_sub_page(array(
+
+		'page_title' 	=> 'Questions and Answers',
+
+		'menu_title'	=> 'Questions and Answers',
+
+    'parent_slug'	=> 'general-settings',
+
+	));
+
+	acf_add_options_sub_page(array(
+
+		'page_title' 	=> 'Cakes',
+
+		'menu_title'	=> 'Cakes',
+
+    'parent_slug'	=> 'general-settings',
+
+	));
+
 }

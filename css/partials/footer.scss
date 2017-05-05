@@ -147,5 +147,8 @@ img.footer-logo-img{
     }
 
   }
-
+  .nav>li>a:focus, .nav>li>a:hover{
+    background: transparent !important;
+    color: $rose-pink !important;
+  }
 }
