@@ -298,3 +298,55 @@ img.filler{
     margin: 0 30px;
   }
 }
+
+/*======================================= Cake Gallery =====================================================*/
+
+.clickme {
+    background-color: #eee;
+    border-radius: 4px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.clickme:hover {
+    text-decoration: underline;
+}
+
+.box {
+    //background-color: #ccc;
+    border-radius: 4px;
+    color: #333;
+    margin: 5px 0;
+    padding: 5px 10px;
+    width: auto;
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+#cakeGallery{
+  .collection{
+    text-align: center;
+    padding: 5px;
+    span a{
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
+      margin: 15px 0 0 0;
+    }
+  }
+}

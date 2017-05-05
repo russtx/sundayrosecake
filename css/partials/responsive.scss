@@ -275,6 +275,17 @@ $screen-sm-min: 768px;
     /*==================== menu page ==========*/
 
 
+    /*==================== Catering page ==========*/
+    #cateringSection{
+      background-image: url(../images/background-rose.png);
+      background-repeat: no-repeat;
+      background-position-x: -320px;
+      background-position-y: 338px;
+      background-size: contain;
+      padding-bottom: 30px;
+
+    }
+
 
 }
 /* Medium devices (desktops, 992px and up) =====================================================================================================*/
@@ -521,6 +532,8 @@ $screen-sm-min: 768px;
     }
     /*==================== catering page ==========*/
     #cateringSection{
+      background-position-x: -200px;
+      background-position-y: 170px;
       h2{
         font-size: 48px;
       }
@@ -538,8 +551,10 @@ $screen-sm-min: 768px;
       }
     }
   }
-  .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
-    width: 100vw;
+  #hp-hero{
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+      width: 100vw;
+    }
   }
   /*==================== Collections Content ==========*/
   .collectionsContent{
@@ -598,7 +613,11 @@ $screen-sm-min: 768px;
       padding: 20px 0 60px 0;
     }
   }
-
+  /*==================== Catering Page ==========*/
+  #cateringSection{
+    background-position-x: -45px;
+    background-position-y: 170px;
+  }
 }
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
 @media (min-width: $screen-xl-min) {

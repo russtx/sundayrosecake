@@ -1,18 +1,85 @@
 <?php /* Template Name: Home Page  */ get_header(); ?>
 
 <main>
-		<section id="collections">
-			<div class="container">
-				<div class="borderBox">
+	<section id="cakeGallery">
+		<div class="container">
+			<div class="borderBox">
+				<div class="collectionsGallery">
 					<h2>Our Collections</h2>
-					<hr />
-					<div class="row">
+					<hr>
+					<h4> Select a category to view more of the same cakes</h4>
+					<div class="row row-centered">
+						<div class=" col-xs-6 col-sm-3 col-centered">
+							<div class="collection">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/wedding-cake.jpg" alt="#" class="img-responsive center-block test-img">
+								<span><a href="#">Weddings</a></span>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-centered">
+							<div class="collection">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/dessert-table.jpg" alt="#" class="img-responsive center-block test-img">
+								<span><a href="#">Dessert Tables</a></span>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-centered">
+							<div class="collection">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/for-him-cake.jpg" alt="#" class="img-responsive center-block test-img">
+								<span><a href="#">For Him</a></span>
+								</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-centered">
+							<div class="collection">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/candy-apple.jpg" alt="#" class="img-responsive center-block test-img">
+								<span><a href="#">Candy Apples</a></span>
+							</div>
+						</div>
 
+						<div class="col-xs-6 col-sm-3 col-centered">
+							<div class="collection">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/cake-pop.jpg" alt="#" class="img-responsive center-block test-img">
+								<span><a href="#">Cake Pops</a></span>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-centered">
+							<div class="collection">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/cupcakes-with-shells.jpg" alt="#" class="img-responsive center-block test-img">
+								<span><a href="#">CupCakes</a></span>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-centered">
+							<div class="collection">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/flag-cake-with-medallions.jpg" alt="#" class="img-responsive center-block test-img">
+								<span><a href="#">Military</a></span>
+							</div>
+						</div>
 					</div><!-- row -->
-					<a href="#" class="btn-main">View All Cakes</a>
-				</div><!-- borderBox-->
-			</div><!-- container -->
-		</section>
+				</div><!-- collectionsGallery -->
+				<a href="#" class="btn-main clickme">View All Cakes</a>
+				<div class="box">
+					<div class="row row-centered">
+						<div class="col-xs-6 col-sm-3 col-centered">
+							<div class="collection">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/children-cake.png" alt="#" class="img-responsive center-block test-img">
+								<span><a href="#">Childrens</a></span>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-centered">
+							<div class="collection">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/holiday-cake.png" alt="#" class="img-responsive center-block test-img">
+								<span><a href="#">Holidays</a></span>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-centered">
+							<div class="collection">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/birthday-cake.png" alt="#" class="img-responsive center-block test-img">
+								<span><a href="#">Birthdays</a></span>
+							</div>
+						</div>
+					</div><!-- row -->
+				</div><!-- box -->
+			</div><!-- borderBox -->
+		</div><!-- container -->
+	</section>
 		<section id="about">
 			<div class="container">
 				<div class="row">
