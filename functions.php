@@ -345,9 +345,21 @@ function bootstrap_theme_enqueue_scripts() {
 	//wp_enqueue_script( 'jquery' );
 
 	// Bootstrap
-	wp_enqueue_script( 'bootstrap-script', $template_url . '/js/bootstrap.min.js', array( 'jquery' ), null, true );
+	//wp_enqueue_script( 'bootstrap-script', $template_url . '/js/bootstrap.min.js', array( 'jquery' ), null, true );
 
-	wp_register_script( 'bootstrap-script',  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' );
+	wp_register_script(
+
+	'bootstrap-script',
+
+	'//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
+
+	array('jquery'),
+
+	'',
+
+	true
+
+);
 
  	wp_enqueue_script('bootstrap-script');
 
@@ -357,11 +369,13 @@ function bootstrap_theme_enqueue_scripts() {
 
 	wp_enqueue_script( 'script', $template_url . '/js/script.js', array( 'jquery' ), null, true );
 
+	wp_enqueue_script( 'lightbox', $template_url . '/js/lightbox.min.js', array( 'jquery' ), '', true );
+
 	//Main Style
   wp_enqueue_style( 'main-style', $template_url . '/css/index.css' );
 	//wp_enqueue_style( 'main-style', get_stylesheet_uri() );
 
-
+  wp_enqueue_style( 'lightbox', $template_url . '/css/lightbox.min.css' );
 
 
 	// Load Thread comments WordPress script.

@@ -1,3 +1,14 @@
+/*!
+Theme Name: sundayrosecakes
+Author: roccons
+Author URI: http://habitatweb.mx/
+Description: This is a blank bootstrap theme for wordpress based on the Bootstrap Starter Wordpress theme by 3sparks llc. This version adds Gulp and the possibility to recompile Bootstrap css from Sass.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
 /***********
 standard bootstrap sizes
 ************/
@@ -31,7 +42,7 @@ import bootstrap
 @import "partials/main.scss";
 @import "partials/footer.scss";
 @import "partials/responsive.scss";
-@import "font-awesome-4.7.0/scss/font-awesome";
+
 
 
 /***********
