@@ -2,6 +2,15 @@
 
 /*==========================================  Main scss ===================================================================== */
 // Home Page
+.home{
+  #cakeGallery{
+    .borderBox{
+      hr{
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
 #collections{
   .borderBox{
     border: solid 2px #000;
@@ -30,7 +39,7 @@ a.btn-main{
   border-radius: 0;
 }
 #about{
-  background-image: url('../images/background-rose.png');
+  background-image: url('./images/background-rose.png');
   background-repeat: no-repeat;
   background-position-x:-50px;
   background-size: contain;
@@ -358,5 +367,5 @@ img.filler{
 }
 /*========================= TestingArea ===========================*/
 .testArea{
-  
+
 }

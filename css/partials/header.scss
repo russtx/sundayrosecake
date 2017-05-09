@@ -45,7 +45,7 @@ img.logo-img{
     display: flex;
     justify-content: space-between;
     .twitter{
-      background: url("../images/twitter-sprite-clr.png") no-repeat;
+      background: url("./images/twitter-sprite-clr.png") no-repeat;
       display: inline-block;
       width: 30px;
       height: 30px;
@@ -55,7 +55,7 @@ img.logo-img{
       background-position-y: -34px;
     }
     .facebook{
-      background: url("../images/facebook-sprite-clr.png") no-repeat;
+      background: url("./images/facebook-sprite-clr.png") no-repeat;
       display: inline-block;
       width: 30px;
       height: 30px;
@@ -65,7 +65,7 @@ img.logo-img{
       background-position-y: -34px;
     }
     .instagram{
-      background: url("../images/instagram-sprite-clr.png") no-repeat;
+      background: url("./images/instagram-sprite-clr.png") no-repeat;
       display: inline-block;
       width: 30px;
       height: 30px;
@@ -77,7 +77,7 @@ img.logo-img{
   }
 }
 .navbar-toggle{
-  margin-top:-26px;
+  margin-top:-2px;
 }
  .navbar-default .navbar-toggle:hover{
    background: $light-pink;
@@ -168,4 +168,37 @@ ul#menu-main-menu{
     text-align: center;
     padding-top:70px;
   }
+}
+
+.affix{
+  -webkit-transition:padding 0.5s linear;
+  -moz-transition:padding 0.5s linear;
+  -o-transition:padding 0.5s linear;
+  transition:padding 0.5s linear;
+  .navbar-header {
+    .phone-logo{
+      visibility: visible;
+
+    }
+    .socialIcons{
+        visibility: visible;
+    }
+  }
+  img.mini-logo-img{
+    display: block;
+  }
+  .header-phone {
+    margin: 0px 0px 0px 80px;
+    position: relative;
+    top: -30px;
+  }
+
+}
+.affix-top {
+  padding-top:5px;
+  padding-bottom:15px;
+  -webkit-transition:padding 0.5s linear;
+  -moz-transition:padding 0.5s linear;
+  -o-transition:padding 0.5s linear;
+  transition:padding 0.5s linear;
 }

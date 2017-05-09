@@ -1,34 +1,36 @@
 <?php /* Template Name: Test Page  */ get_header(); ?>
+<section id="cakeGallery">
+	<div class="container">
+		<div class="borderBox">
+			<div class="collectionsGallery">
+					<div class="row row-centered">
 
-<div class="container">
-	<div class="row">
-			<div class="col-xs-12 testingArea">
-				<?php if( have_rows('test_area') ): ?>
-					<?php while( have_rows('test_area') ): the_row(); ?>
-						<img src="<?php the_sub_field('test_featured_image'); ?>" alt="" />
-						<a href="#" class="gallery-link" data-lightbox="weddings" data-title="Wedding 1"><?php the_sub_field('test_name'); ?></a>
-				<?php endwhile; ?>
-				<?php endif; ?>
-			</div>
-	</div>
-</div>
-<!-- Gallery Sample from ACF -->
-<?php
+						<h2>Our Collections</h2>
+						<hr>
+						<h4> Select a category to view more of the same cakes</h4>
 
-$images = get_field('test_gallery');
+								<?php if( have_rows('test_area') ): ?>
+									<?php while( have_rows('test_area') ): the_row(); ?>
+										<div class=" col-xs-6 col-sm-3 col-centered">
+											<div class="collection">
+													<img src="<?php the_sub_field('test_featured_image'); ?>" alt="#" class="img-responsive center-block test-img" />
+													<span><a href="<?php the_sub_field('test_featured_image'); ?>" class="gallery-link" data-lightbox="<?php the_sub_field('test_name'); ?>" data-title="<?php the_sub_field('test_name'); ?>"><?php the_sub_field('test_name'); ?></a></span>
+													<?php
+														$images = get_sub_field('test_gallery');
+														foreach($images as $image): ?>
+															<a href="<?php echo $image['url']; ?>" data-lightbox="<?php the_sub_field('test_name'); ?>" data-title="<?php the_sub_field('test_name'); ?>"></a>
+													<?php endforeach; ?>
+											</div>
+										</div>
+								<?php endwhile; ?>
+								<?php endif; ?>
 
-if( $images ): ?>
-    <ul>
-        <?php foreach( $images as $image ): ?>
-            <li>
-                <a href="<?php echo $image['url']; ?>">
-                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-                </a>
-                <p><?php echo $image['caption']; ?></p>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-<?php endif; ?>
+					</div><!-- row -->
+				</div> <!-- collectionsGallery -->
+			</div><!-- borderBox -->
+	</div><!-- container -->
+</section>
+
 
 
 

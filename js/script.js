@@ -26,7 +26,7 @@ $('.clickme').each(function() {
         $(this).next('.box').slideToggle('fast');
     });
 });
-
+// more stuff here
 
 
 

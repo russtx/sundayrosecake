@@ -12,13 +12,14 @@ gulp.task('php', function() {
   .pipe(notify({ message : "html"}));
 })
 
-// compila sass
+
+
 gulp.task('sass', function () {
-  gulp.src('./css/index.s*ss')
-    .pipe(sass({ indentedSyntax: false, outputStyle: 'compressed'  }).on('error', sass.logError))
-    .pipe(gulp.dest('./css'))
-    .pipe(livereload())
-    .pipe(notify({ message : "sass"}));
+ return gulp.src('./css/style.s*ss')
+   .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+   .pipe(gulp.dest('./'))
+   .pipe(livereload())
+   .pipe(notify({ message : "sass"}));
 });
 
 /* WATCH */

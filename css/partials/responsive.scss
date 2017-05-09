@@ -14,6 +14,7 @@ $screen-sm-min: 768px;
         top: 0;
         width: 100%;
         z-index: 9999;
+
     }
 
     .affix + .container-fluid {
@@ -57,6 +58,7 @@ $screen-sm-min: 768px;
   }
   .navbar-default{
     height:52px;
+
   }
   .navbar-collapse{
     position: relative;
@@ -82,6 +84,8 @@ $screen-sm-min: 768px;
       }
       a.header-phone{
         padding-left: 5px;
+        top: 0;
+        margin: 0 auto;
       }
     }
     .socialIcons{
@@ -92,7 +96,7 @@ $screen-sm-min: 768px;
       justify-content: space-between;
       float:right;
       .twitter{
-        background: url("../images/twitter-sprite-clr.png") no-repeat;
+        background: url("./images/twitter-sprite-clr.png") no-repeat;
         display: inline-block;
         width: 30px;
         height: 30px;
@@ -104,7 +108,7 @@ $screen-sm-min: 768px;
         background-position-y: -34px;
       }
       .facebook{
-        background: url("../images/facebook-sprite-clr.png") no-repeat;
+        background: url("./images/facebook-sprite-clr.png") no-repeat;
         display: inline-block;
         width: 30px;
         height: 30px;
@@ -116,7 +120,7 @@ $screen-sm-min: 768px;
         background-position-y: -34px;
       }
       .instagram{
-        background: url("../images/instagram-sprite-clr.png") no-repeat;
+        background: url("./images/instagram-sprite-clr.png") no-repeat;
         display: inline-block;
         width: 30px;
         height: 30px;
@@ -265,7 +269,7 @@ $screen-sm-min: 768px;
     margin: 20px 20px 60px 20px;
   }
   #otherPost{
-    background-image: url(../images/background-rose.png);
+    background-image: url(./images/background-rose.png);
     background-repeat: no-repeat;
     background-position-x: -320px;
     background-size: contain;
@@ -285,7 +289,7 @@ $screen-sm-min: 768px;
 
     /*==================== Catering page ==========*/
     #cateringSection{
-      background-image: url(../images/background-rose.png);
+      background-image: url(./images/background-rose.png);
       background-repeat: no-repeat;
       background-position-x: -320px;
       background-position-y: 338px;
@@ -563,6 +567,9 @@ $screen-sm-min: 768px;
 }
 /* Large devices (large desktops, 1200px and up)============================================================================================ */
 @media (min-width: $screen-lg-min) {
+  #mainPhoto {
+    min-height: 640px;
+  }
   .caption-wrapper {
     top: -460px;
     .caption{
@@ -650,6 +657,9 @@ $screen-sm-min: 768px;
 }
 /* Large devices (large desktops, 1600px and up)============================================================================================ */
 @media (min-width: $screen-xl-min) {
+  #mainPhoto {
+    min-height: 790px;
+  }
   .carousel {
     max-height: 935px;
   }

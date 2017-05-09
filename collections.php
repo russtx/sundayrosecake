@@ -19,78 +19,31 @@
 		<div class="container">
 			<div class="borderBox">
 				<div class="collectionsGallery">
-					<h2>Our Collections</h2>
-					<hr>
-					<h4> Select a category to view more of the same cakes</h4>
-					<div class="row row-centered">
-						<div class=" col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/wedding-cake.jpg" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">Weddings</a></span>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/dessert-table.jpg" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">Dessert Tables</a></span>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/for-him-cake.jpg" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">For Him</a></span>
-								</div>
-						</div>
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/candy-apple.jpg" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">Candy Apples</a></span>
-							</div>
-						</div>
 
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/cake-pop.jpg" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">Cake Pops</a></span>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/cupcakes-with-shells.jpg" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">CupCakes</a></span>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/flag-cake-with-medallions.jpg" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">Military</a></span>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/children-cake.png" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">Childrens</a></span>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/holiday-cake.png" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">Holidays</a></span>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/birthday-cake.png" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">Birthdays</a></span>
-							</div>
-						</div>
+					<div class="row row-centered">
+
+						<h2>Our Collections</h2>
+						<hr>
+						<h4> Select a category to view more of the same cakes</h4>
+
+								<?php if( have_rows('collections') ): ?>
+									<?php while( have_rows('collections') ): the_row(); ?>
+										<div class=" col-xs-6 col-sm-3 col-centered">
+											<div class="collection">
+													<img src="<?php the_sub_field('collection_featured_image'); ?>" alt="#" class="img-responsive center-block test-img" />
+													<span><a href="<?php the_sub_field('collection_featured_image'); ?>" class="gallery-link" data-lightbox="<?php the_sub_field('collection_name'); ?>" data-title="<?php the_sub_field('collection_name'); ?>"><?php the_sub_field('collection_name'); ?></a></span>
+													<?php
+														$images = get_sub_field('collection_gallery');
+														foreach($images as $image): ?>
+															<a href="<?php echo $image['url']; ?>" data-lightbox="<?php the_sub_field('collection_name'); ?>" data-title="<?php the_sub_field('collection_name'); ?>"></a>
+													<?php endforeach; ?>
+											</div>
+										</div>
+								<?php endwhile; ?>
+								<?php endif; ?>
+
 					</div><!-- row -->
 				</div><!-- collectionsGallery -->
-
-
-
-
-
 
 			</div><!-- borderBox -->
 		</div><!-- container -->
