@@ -911,6 +911,7 @@ img.footer-logo-img {
   }
   ul#menu-main-menu {
     background: transparent;
+    width: 100%;
   }
   ul#menu-main-menu li a {
     font-size: 14px;
@@ -922,6 +923,9 @@ img.footer-logo-img {
     position: relative;
     top: -30px;
     padding-top: 0;
+  }
+  .navbar-default .navbar-collapse {
+    width: 500px;
   }
   .navbar-header {
     width: 100%;
@@ -985,6 +989,10 @@ img.footer-logo-img {
   .navbar-header .socialIcons .instagram:hover {
     background-position-y: -34px;
   }
+  .flex {
+    display: flex;
+    justify-content: space-around;
+  }
   .social .socialIcons {
     display: block;
     width: 100%;
@@ -999,7 +1007,7 @@ img.footer-logo-img {
     float: right;
   }
   .carousel-inner {
-    top: 0px;
+    top: -35px;
   }
   .caption-wrapper {
     top: -300px;
@@ -1144,6 +1152,9 @@ img.footer-logo-img {
   }
   .navbar-collapse {
     top: -38px;
+  }
+  .navbar-default .navbar-collapse {
+    width: 580px;
   }
   .caption-wrapper {
     top: -382px;

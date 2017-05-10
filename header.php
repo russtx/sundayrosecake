@@ -17,7 +17,7 @@
       <div class="masthead">
         <div class="container">
           <div class="col-xs-12 col-sm-4 phone-logo">
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-mini.png" alt="Mini Logo" class="mini-logo-img"></a>
+            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-mini.png" alt="Mini Logo" class="mini-logo-img"></a>
             <a href="tel:555.555.5555" class="header-phone">555.555.5555</a>
           </div>
 
@@ -60,7 +60,7 @@
             </div><!-- navbar-header -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse " >
+            <div class="collapse navbar-collapse flex" >
              <?php wp_nav_menu( array('menu' => 'Main', 'menu_class' => 'nav navbar-nav ', 'depth'=> 3, 'container'=> false, 'walker'=> new Bootstrap_Walker_Nav_Menu)); ?>
             </div><!-- /.navbar-collapse -->
           </div><!-- container -->
