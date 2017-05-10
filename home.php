@@ -10,7 +10,7 @@
 
 						<h2>Our Collections</h2>
 						<hr>
-						
+
 								<?php $other_page = 8;  ?>
 								<?php if( have_rows('collections', $other_page) ): ?>
 									<?php while( have_rows('collections', $other_page) ): the_row(); ?>
@@ -30,29 +30,9 @@
 
 					</div><!-- row -->
 				</div><!-- collectionsGallery -->
-				<a href="#" class="btn-main clickme">View All Cakes</a>
-				<div class="box">
-					<div class="row row-centered">
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/children-cake.png" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">Childrens</a></span>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/holiday-cake.png" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">Holidays</a></span>
-							</div>
-						</div>
-						<div class="col-xs-6 col-sm-3 col-centered">
-							<div class="collection">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/birthday-cake.png" alt="#" class="img-responsive center-block test-img">
-								<span><a href="#">Birthdays</a></span>
-							</div>
-						</div>
-					</div><!-- row -->
-				</div><!-- box -->
+				<a href="<?php echo home_url(); ?>/collections/#cakeGallery" class="btn-main">View All Cakes</a>
+
+
 			</div><!-- borderBox -->
 		</div><!-- container -->
 	</section>
