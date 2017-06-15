@@ -15,15 +15,17 @@
 								<?php if( have_rows('collections', $other_page) ): ?>
 									<?php while( have_rows('collections', $other_page) ): the_row(); ?>
 										<div class=" col-xs-6 col-sm-3 col-centered">
+											<a href="<?php the_sub_field('collection_featured_image'); ?>" class="gallery-link" data-lightbox="<?php the_sub_field('collection_name'); ?>" data-title="<?php the_sub_field('collection_name'); ?>">
 											<div class="collection">
 													<img src="<?php the_sub_field('collection_featured_image'); ?>" alt="#" class="img-responsive center-block test-img" />
-													<span><a href="<?php the_sub_field('collection_featured_image'); ?>" class="gallery-link" data-lightbox="<?php the_sub_field('collection_name'); ?>" data-title="<?php the_sub_field('collection_name'); ?>"><?php the_sub_field('collection_name'); ?></a></span>
+													<span><?php the_sub_field('collection_name'); ?></span>
 													<?php
 														$images = get_sub_field('collection_gallery');
 														foreach($images as $image): ?>
 															<a href="<?php echo $image['url']; ?>" data-lightbox="<?php the_sub_field('collection_name'); ?>" data-title="<?php the_sub_field('collection_name'); ?>"></a>
 													<?php endforeach; ?>
 											</div>
+											</a>
 										</div>
 								<?php endwhile; ?>
 								<?php endif; ?>
@@ -72,70 +74,12 @@
 						<h2>What's Been Happening Lately</h2>
 						<hr />
 						<div class="row">
-							<div class="col-md-3 col-xs-6">
-								<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-							</div>
-							<div class="col-md-3 col-xs-6">
-								<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-							</div>
-							<div class="col-md-3 col-xs-6">
-								<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-							</div>
-							<div class="col-md-3 col-xs-6">
-								<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-							</div>
-							<div class="col-md-3 col-xs-6">
-								<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-							</div>
-							<div class="col-md-3 col-xs-6">
-								<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-							</div>
-							<div class="col-md-3 col-xs-6">
-								<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-							</div>
-							<div class="col-md-3 col-xs-6">
-								<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-							</div>
-						</div><!-- row -->
-						<div class="row">
 
-							<div class="col-xs-12 col-sm-6">
-								<a href="#" class="btn-main left clickme">Load More</a>
-								<div class="box ">
-									<div class="container reset">
-										<div class="row">
-											<div class="col-md-3 col-xs-6">
-												<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-											</div>
-											<div class="col-md-3 col-xs-6">
-												<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-											</div>
-											<div class="col-md-3 col-xs-6">
-												<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-											</div>
-											<div class="col-md-3 col-xs-6">
-												<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-											</div>
-											<div class="col-md-3 col-xs-6">
-												<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-											</div>
-											<div class="col-md-3 col-xs-6">
-												<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-											</div>
-											<div class="col-md-3 col-xs-6">
-												<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-											</div>
-											<div class="col-md-3 col-xs-6">
-												<img src="http://placehold.it/200x200?text=Instagram Feed" class="img-responsive center-block filler" alt="" />
-											</div>
-										</div><!-- row -->
-									</div><!--container -->
-							</div><!-- box -->
-							</div>
 
-							<div class="col-xs-12 col-sm-6 ">
-								<a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="btn-main right ">Follow Us<img src="<?php echo get_template_directory_uri(); ?>/images/instagram.png" alt="instagram" class="instagram-img"></a>
-							</div>
+								<?php echo do_shortcode('[instagram-feed num=9 cols=3]'); ?>
+
+
+
 
 
 						</div><!-- row -->

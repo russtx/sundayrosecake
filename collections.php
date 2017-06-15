@@ -29,15 +29,17 @@
 								<?php if( have_rows('collections') ): ?>
 									<?php while( have_rows('collections') ): the_row(); ?>
 										<div class=" col-xs-6 col-sm-3 col-centered">
-											<div class="collection">
+											<a href="<?php the_sub_field('collection_featured_image'); ?>" class="gallery-link" data-lightbox="<?php the_sub_field('collection_name'); ?>" data-title="<?php the_sub_field('collection_name'); ?>">
+												<div class="collection">
 													<img src="<?php the_sub_field('collection_featured_image'); ?>" alt="#" class="img-responsive center-block test-img" />
-													<span><a href="<?php the_sub_field('collection_featured_image'); ?>" class="gallery-link" data-lightbox="<?php the_sub_field('collection_name'); ?>" data-title="<?php the_sub_field('collection_name'); ?>"><?php the_sub_field('collection_name'); ?></a></span>
+													<span><?php the_sub_field('collection_name'); ?></span>
 													<?php
 														$images = get_sub_field('collection_gallery');
 														foreach($images as $image): ?>
 															<a href="<?php echo $image['url']; ?>" data-lightbox="<?php the_sub_field('collection_name'); ?>" data-title="<?php the_sub_field('collection_name'); ?>"></a>
 													<?php endforeach; ?>
 											</div>
+										</a>
 										</div>
 								<?php endwhile; ?>
 								<?php endif; ?>

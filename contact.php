@@ -6,9 +6,11 @@
     <div class="container">
       <div class="row">
         <h2>Call Us</h2>
-
         <hr />
-        <span><a href="tel:555.555.5555" class="header-phone">555.555.5555</a></span>
+        <span><a href="tel:<?php the_field('phone_number', 'option'); ?>" class="header-phone"><?php the_field('phone_number', 'option'); ?></a></span>
+				<h2>Our Address</h2>
+        <hr />
+        <span class="address"><?php the_field('address', 'option'); ?></span>
         <h2>Email Us</h2>
         <hr />
         <?php echo do_shortcode('[contact-form-7 id="108" title="Contact form 2"]'); ?>

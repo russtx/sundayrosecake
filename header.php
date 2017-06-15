@@ -18,7 +18,7 @@
         <div class="container">
           <div class="col-xs-12 col-sm-4 phone-logo">
             <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-mini.png" alt="Mini Logo" class="mini-logo-img"></a>
-            <a href="tel:555.555.5555" class="header-phone">555.555.5555</a>
+            <a href="tel:<?php the_field('phone_number', 'option'); ?>" class="header-phone"><?php the_field('phone_number', 'option'); ?></a>
           </div>
 
           <div class="col-xs-12 col-sm-4 main-logo top-header">
@@ -42,7 +42,7 @@
 
               <div class="col-xs-8 col-sm-4 phone-logo">
                 <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-mini.png" alt="Mini Logo" class="mini-logo-img"></a>
-                <a href="tel:555.555.5555" class="header-phone">555.555.5555</a>
+                <a href="tel:<?php the_field('phone_number', 'option'); ?>" class="header-phone"><?php the_field('phone_number', 'option'); ?></a>
               </div>
 
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">

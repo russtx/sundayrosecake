@@ -163,6 +163,7 @@ $screen-sm-min: 768px;
   .caption-wrapper{
     top:-300px;
     .caption{
+      min-height: 160px;
       h1{
         font-size: 70px;
       }
@@ -173,7 +174,7 @@ $screen-sm-min: 768px;
     max-height: 486px;
   }
   .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
-    margin-top: -21px;
+    margin-top: -85px;
   }
   #instagramFeed{
     a.btn-main.left{
@@ -185,8 +186,9 @@ $screen-sm-min: 768px;
   }
   #contact{
     .borderBox{
-      min-height: 800px;
+      min-height: 1100px;
     }
+    
   }
   img.footer-logo-img{
     margin:0;
@@ -353,6 +355,7 @@ $screen-sm-min: 768px;
   .caption-wrapper {
     top: -382px;
     .caption{
+      min-height: 200px;
       h1{
         font-size: 90px;
       }
@@ -414,7 +417,7 @@ $screen-sm-min: 768px;
   }
   #contact{
     .borderBox{
-      min-height: 850px;
+      min-height: 1150px;
     }
     h2{
       font-size: 48px;
@@ -584,6 +587,7 @@ $screen-sm-min: 768px;
   .caption-wrapper {
     top: -460px;
     .caption{
+      min-height: 250px;
       h1{
         font-size: 112px;
       }
